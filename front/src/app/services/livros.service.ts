@@ -11,7 +11,6 @@ export class LivroService {
 
   listar(): Observable<Livro[]>{
     const url = `${this.base}api/livros`
-    console.log("XXXXXXX", url);
     
     return this.http.get<Livro[]>(url)
   }
